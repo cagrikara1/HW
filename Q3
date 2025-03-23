@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h> 
+int main(void) {
+    int popularity, size;
+    long long homeValue; 
+    // Prompt user for input
+    printf("Enter popularity: ");
+    scanf("%d", &popularity);
+
+    printf("Enter size: ");
+    scanf("%d", &size);
+
+    // Calculate home value using the given formula
+    homeValue = (pow(popularity, 3) + pow(size, 2)) * 10000;
+
+    // Display the computed home value
+    printf("Home value is: %lld TL\n", homeValue);
+
+    return 0; 
+}
