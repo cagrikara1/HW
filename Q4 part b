@@ -24,3 +24,7 @@ void computeHomeValue(void) {
     // Display the computed home value
     printf("Home value is: %lld TL\n", homeValue);
 }
+// Function definition
+int computeHomeValue(int popularity, int size) {
+    return (pow(popularity, 3) + pow(size, 2)) * 10000;
+}
